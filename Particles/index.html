@@ -11,10 +11,23 @@
       * {
         margin: 0;
         padding: 0;
+
+        /* Nothing should be selectable */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
       }
 
       body {
         overflow: hidden;
+      }
+
+      canvas {
+        background-color: #DCEDC8;
+        display: block;
       }
 
     </style>
@@ -25,6 +38,8 @@
 
     <canvas id="mainCanvas"></canvas>
 
+    <script type="application/javascript" src="stats.min.js"></script>
+    <script type="application/javascript" src="dat.gui.min.js"></script>
     <script type="application/javascript" src="main.js"></script>
   </body>
 
